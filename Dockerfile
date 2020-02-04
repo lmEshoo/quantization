@@ -1,14 +1,8 @@
-# FROM python:3.7
-  
 FROM ubuntu:18.04
 
 LABEL Lini Mestar <liniMestar@gmail.com>
 
 ENV DEBIAN_FRONTEND=noninteractive
-# RUN \
-#   ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime && \
-#   apt-get install -y tzdata && \
-#   dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN apt-get clean && apt-get update && apt-get install -y \
         build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev \
@@ -82,13 +76,6 @@ RUN mkdir /app && cd /app
 ENV TVM_HOME=/app/tvm
 ENV PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python
 
-# RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh -O ~/anaconda.sh && \
-#     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
-#     rm ~/anaconda.sh && \
-#     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
-#     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc 
-#     # echo "conda activate base" >> ~/.bashrc
-
 ADD Quantization_PJ2 /app/Quantization_PJ2
 
 ADD tvm /app/tvm
@@ -121,18 +108,5 @@ RUN \
   cd build && \
   cmake .. && \
   make -j4
-
-# # Add NVIDIA package repositories
-# RUN \ 
-#   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb && \
-#   dpkg -i cuda-repo-ubuntu1804_10.0.130-1_amd64.deb && \
-#   apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub && \
-#   apt-get -y update && \
-#   wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb && \
-#   apt install ./nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb && \
-#   apt-get -y update && \
-#   apt-get install --no-install-recommends -y nvidia-driver-418 & \
-#   apt-get install -y --no-install-recommends libnvinfer5=5.1.5-1+cuda10.0 \
-#     libnvinfer-dev=5.1.5-1+cuda10.0
 
 WORKDIR /src
