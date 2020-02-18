@@ -1,0 +1,1272 @@
+====================
+id : 0
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : []
+input_size : (224, 224, 3)
+kernel_size : (3, 3, 3, 32)
+ops_after_concat : []
+output : [1]
+output_choice : [3, -1]
+output_size : (112, 112, 32)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 1
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 32
+has_bias : True
+input : [0]
+input_size : (112, 112, 32)
+kernel_size : (3, 3, 32, 1)
+ops_after_concat : []
+output : [2]
+output_choice : [3, -1]
+output_size : (112, 112, 32)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 2
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [1]
+input_size : (112, 112, 32)
+kernel_size : (1, 1, 32, 16)
+ops_after_concat : []
+output : [3]
+output_choice : [3, -1]
+output_size : (112, 112, 16)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 3
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [2]
+input_size : (112, 112, 16)
+kernel_size : (1, 1, 16, 96)
+ops_after_concat : []
+output : [4]
+output_choice : [3, -1]
+output_size : (112, 112, 96)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 4
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 96
+has_bias : True
+input : [3]
+input_size : (112, 112, 96)
+kernel_size : (3, 3, 96, 1)
+ops_after_concat : []
+output : [5]
+output_choice : [3, -1]
+output_size : (56, 56, 96)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 5
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [4]
+input_size : (56, 56, 96)
+kernel_size : (1, 1, 96, 24)
+ops_after_concat : []
+output : [6, 8]
+output_choice : [0, 0]
+output_size : (56, 56, 24)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 6
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [5]
+input_size : (56, 56, 24)
+kernel_size : (1, 1, 24, 144)
+ops_after_concat : []
+output : [7]
+output_choice : [3, -1]
+output_size : (56, 56, 144)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 7
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 144
+has_bias : True
+input : [6]
+input_size : (56, 56, 144)
+kernel_size : (3, 3, 144, 1)
+ops_after_concat : []
+output : [8]
+output_choice : [3, -1]
+output_size : (56, 56, 144)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 8
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [5, 7]
+input_size : (56, 56, 144)
+kernel_size : (1, 1, 144, 24)
+ops_after_concat : []
+output : [9]
+output_choice : [3, -1]
+output_size : (56, 56, 24)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 5
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 9
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [8]
+input_size : (56, 56, 24)
+kernel_size : (1, 1, 24, 144)
+ops_after_concat : []
+output : [10]
+output_choice : [3, -1]
+output_size : (56, 56, 144)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 10
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 144
+has_bias : True
+input : [9]
+input_size : (56, 56, 144)
+kernel_size : (3, 3, 144, 1)
+ops_after_concat : []
+output : [11]
+output_choice : [3, -1]
+output_size : (28, 28, 144)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 11
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [10]
+input_size : (28, 28, 144)
+kernel_size : (1, 1, 144, 32)
+ops_after_concat : []
+output : [12, 14]
+output_choice : [0, 0]
+output_size : (28, 28, 32)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 12
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [11]
+input_size : (28, 28, 32)
+kernel_size : (1, 1, 32, 192)
+ops_after_concat : []
+output : [13]
+output_choice : [3, -1]
+output_size : (28, 28, 192)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 13
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 192
+has_bias : True
+input : [12]
+input_size : (28, 28, 192)
+kernel_size : (3, 3, 192, 1)
+ops_after_concat : []
+output : [14]
+output_choice : [3, -1]
+output_size : (28, 28, 192)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 14
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [11, 13]
+input_size : (28, 28, 192)
+kernel_size : (1, 1, 192, 32)
+ops_after_concat : []
+output : [15, 17]
+output_choice : [0, 0]
+output_size : (28, 28, 32)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 11
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 15
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [14]
+input_size : (28, 28, 32)
+kernel_size : (1, 1, 32, 192)
+ops_after_concat : []
+output : [16]
+output_choice : [3, -1]
+output_size : (28, 28, 192)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 16
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 192
+has_bias : True
+input : [15]
+input_size : (28, 28, 192)
+kernel_size : (3, 3, 192, 1)
+ops_after_concat : []
+output : [17]
+output_choice : [3, -1]
+output_size : (28, 28, 192)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 17
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [14, 16]
+input_size : (28, 28, 192)
+kernel_size : (1, 1, 192, 32)
+ops_after_concat : []
+output : [18]
+output_choice : [3, -1]
+output_size : (28, 28, 32)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 14
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 18
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [17]
+input_size : (28, 28, 32)
+kernel_size : (1, 1, 32, 192)
+ops_after_concat : []
+output : [19]
+output_choice : [3, -1]
+output_size : (28, 28, 192)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 19
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 192
+has_bias : True
+input : [18]
+input_size : (28, 28, 192)
+kernel_size : (3, 3, 192, 1)
+ops_after_concat : []
+output : [20]
+output_choice : [3, -1]
+output_size : (14, 14, 192)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 20
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [19]
+input_size : (14, 14, 192)
+kernel_size : (1, 1, 192, 64)
+ops_after_concat : []
+output : [21, 23]
+output_choice : [0, 0]
+output_size : (14, 14, 64)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 21
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [20]
+input_size : (14, 14, 64)
+kernel_size : (1, 1, 64, 384)
+ops_after_concat : []
+output : [22]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 22
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 384
+has_bias : True
+input : [21]
+input_size : (14, 14, 384)
+kernel_size : (3, 3, 384, 1)
+ops_after_concat : []
+output : [23]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 23
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [20, 22]
+input_size : (14, 14, 384)
+kernel_size : (1, 1, 384, 64)
+ops_after_concat : []
+output : [24, 26]
+output_choice : [0, 0]
+output_size : (14, 14, 64)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 20
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 24
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [23]
+input_size : (14, 14, 64)
+kernel_size : (1, 1, 64, 384)
+ops_after_concat : []
+output : [25]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 25
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 384
+has_bias : True
+input : [24]
+input_size : (14, 14, 384)
+kernel_size : (3, 3, 384, 1)
+ops_after_concat : []
+output : [26]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 26
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [23, 25]
+input_size : (14, 14, 384)
+kernel_size : (1, 1, 384, 64)
+ops_after_concat : []
+output : [27, 29]
+output_choice : [0, 0]
+output_size : (14, 14, 64)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 23
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 27
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [26]
+input_size : (14, 14, 64)
+kernel_size : (1, 1, 64, 384)
+ops_after_concat : []
+output : [28]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 28
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 384
+has_bias : True
+input : [27]
+input_size : (14, 14, 384)
+kernel_size : (3, 3, 384, 1)
+ops_after_concat : []
+output : [29]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 29
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [26, 28]
+input_size : (14, 14, 384)
+kernel_size : (1, 1, 384, 64)
+ops_after_concat : []
+output : [30]
+output_choice : [3, -1]
+output_size : (14, 14, 64)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 26
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 30
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [29]
+input_size : (14, 14, 64)
+kernel_size : (1, 1, 64, 384)
+ops_after_concat : []
+output : [31]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 31
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 384
+has_bias : True
+input : [30]
+input_size : (14, 14, 384)
+kernel_size : (3, 3, 384, 1)
+ops_after_concat : []
+output : [32]
+output_choice : [3, -1]
+output_size : (14, 14, 384)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 32
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [31]
+input_size : (14, 14, 384)
+kernel_size : (1, 1, 384, 96)
+ops_after_concat : []
+output : [33, 35]
+output_choice : [0, 0]
+output_size : (14, 14, 96)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 33
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [32]
+input_size : (14, 14, 96)
+kernel_size : (1, 1, 96, 576)
+ops_after_concat : []
+output : [34]
+output_choice : [3, -1]
+output_size : (14, 14, 576)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 34
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 576
+has_bias : True
+input : [33]
+input_size : (14, 14, 576)
+kernel_size : (3, 3, 576, 1)
+ops_after_concat : []
+output : [35]
+output_choice : [3, -1]
+output_size : (14, 14, 576)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 35
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [32, 34]
+input_size : (14, 14, 576)
+kernel_size : (1, 1, 576, 96)
+ops_after_concat : []
+output : [36, 38]
+output_choice : [0, 0]
+output_size : (14, 14, 96)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 32
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 36
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [35]
+input_size : (14, 14, 96)
+kernel_size : (1, 1, 96, 576)
+ops_after_concat : []
+output : [37]
+output_choice : [3, -1]
+output_size : (14, 14, 576)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 37
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 576
+has_bias : True
+input : [36]
+input_size : (14, 14, 576)
+kernel_size : (3, 3, 576, 1)
+ops_after_concat : []
+output : [38]
+output_choice : [3, -1]
+output_size : (14, 14, 576)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 38
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [35, 37]
+input_size : (14, 14, 576)
+kernel_size : (1, 1, 576, 96)
+ops_after_concat : []
+output : [39]
+output_choice : [3, -1]
+output_size : (14, 14, 96)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 35
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 39
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [38]
+input_size : (14, 14, 96)
+kernel_size : (1, 1, 96, 576)
+ops_after_concat : []
+output : [40]
+output_choice : [3, -1]
+output_size : (14, 14, 576)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 40
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 576
+has_bias : True
+input : [39]
+input_size : (14, 14, 576)
+kernel_size : (3, 3, 576, 1)
+ops_after_concat : []
+output : [41]
+output_choice : [3, -1]
+output_size : (7, 7, 576)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 41
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [40]
+input_size : (7, 7, 576)
+kernel_size : (1, 1, 576, 160)
+ops_after_concat : []
+output : [42, 44]
+output_choice : [0, 0]
+output_size : (7, 7, 160)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 42
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [41]
+input_size : (7, 7, 160)
+kernel_size : (1, 1, 160, 960)
+ops_after_concat : []
+output : [43]
+output_choice : [3, -1]
+output_size : (7, 7, 960)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 43
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 960
+has_bias : True
+input : [42]
+input_size : (7, 7, 960)
+kernel_size : (3, 3, 960, 1)
+ops_after_concat : []
+output : [44]
+output_choice : [3, -1]
+output_size : (7, 7, 960)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 44
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [41, 43]
+input_size : (7, 7, 960)
+kernel_size : (1, 1, 960, 160)
+ops_after_concat : []
+output : [45, 47]
+output_choice : [0, 0]
+output_size : (7, 7, 160)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 41
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 45
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [44]
+input_size : (7, 7, 160)
+kernel_size : (1, 1, 160, 960)
+ops_after_concat : []
+output : [46]
+output_choice : [3, -1]
+output_size : (7, 7, 960)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 46
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 960
+has_bias : True
+input : [45]
+input_size : (7, 7, 960)
+kernel_size : (3, 3, 960, 1)
+ops_after_concat : []
+output : [47]
+output_choice : [3, -1]
+output_size : (7, 7, 960)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 47
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [44, 46]
+input_size : (7, 7, 960)
+kernel_size : (1, 1, 960, 160)
+ops_after_concat : []
+output : [48]
+output_choice : [3, -1]
+output_size : (7, 7, 160)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : 44
+residual_pos : 2
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 48
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [47]
+input_size : (7, 7, 160)
+kernel_size : (1, 1, 160, 960)
+ops_after_concat : []
+output : [49]
+output_choice : [3, -1]
+output_size : (7, 7, 960)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 49
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 960
+has_bias : True
+input : [48]
+input_size : (7, 7, 960)
+kernel_size : (3, 3, 960, 1)
+ops_after_concat : []
+output : [50]
+output_choice : [3, -1]
+output_size : (7, 7, 960)
+padding_size : [[0, 0], [1, 1], [1, 1], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 50
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [49]
+input_size : (7, 7, 960)
+kernel_size : (1, 1, 960, 320)
+ops_after_concat : []
+output : [51]
+output_choice : [3, -1]
+output_size : (7, 7, 320)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 51
+activation : clip
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [50]
+input_size : (7, 7, 320)
+kernel_size : (1, 1, 320, 1280)
+ops_after_concat : []
+output : [52]
+output_choice : [3, -1]
+output_size : (1, 1, 1280)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : nn.avg_pool2d
+pool_padding : [0, 0]
+pool_size : [7, 7]
+pool_stride : [1, 1]
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0
+====================
+id : 52
+activation : None
+concat_after_conv : False
+extra_concat_inputs : []
+groups : 1
+has_bias : True
+input : [51]
+input_size : (1, 1, 1280)
+kernel_size : (1, 1, 1280, 1001)
+ops_after_concat : []
+output : []
+output_choice : [3, -1]
+output_size : (1, 1, 1001)
+padding_size : [[0, 0], [0, 0], [0, 0], [0, 0]]
+pool : None
+pool_padding : None
+pool_size : None
+pool_stride : None
+residual_input_layer_id : None
+residual_pos : 3
+shuffle_groups : None
+type : nn.conv2d
+upsampling_scale : 0

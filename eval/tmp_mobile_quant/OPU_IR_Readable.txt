@@ -1,0 +1,1325 @@
+==========
+id: 1
+type:1
+input_ddr_addr:[0]
+output_ddr_addr:[2]
+input_size:[1, 224, 224, 3]
+output_size:[1, 112, 112, 32]
+ker_size:[1, 3, 3]
+ker_stride:[1, 2, 2]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 2
+type:1
+input_ddr_addr:[1]
+output_ddr_addr:[3]
+input_size:[1, 112, 112, 32]
+output_size:[1, 112, 112, 32]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:32
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 3
+type:1
+input_ddr_addr:[2]
+output_ddr_addr:[4]
+input_size:[1, 112, 112, 32]
+output_size:[1, 112, 112, 16]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 4
+type:1
+input_ddr_addr:[3]
+output_ddr_addr:[5]
+input_size:[1, 112, 112, 16]
+output_size:[1, 112, 112, 96]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 5
+type:1
+input_ddr_addr:[4]
+output_ddr_addr:[6]
+input_size:[1, 112, 112, 96]
+output_size:[1, 56, 56, 96]
+ker_size:[1, 3, 3]
+ker_stride:[1, 2, 2]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:96
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 6
+type:1
+input_ddr_addr:[5]
+output_ddr_addr:[7, 9]
+input_size:[1, 56, 56, 96]
+output_size:[1, 56, 56, 24]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[0, 0]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 7
+type:1
+input_ddr_addr:[6]
+output_ddr_addr:[8]
+input_size:[1, 56, 56, 24]
+output_size:[1, 56, 56, 144]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 8
+type:1
+input_ddr_addr:[7]
+output_ddr_addr:[9]
+input_size:[1, 56, 56, 144]
+output_size:[1, 56, 56, 144]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:144
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 9
+type:1
+input_ddr_addr:[8]
+output_ddr_addr:[10]
+input_size:[1, 56, 56, 144]
+output_size:[1, 56, 56, 24]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[6]
+output_choice:[3, -1]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 10
+type:1
+input_ddr_addr:[9]
+output_ddr_addr:[11]
+input_size:[1, 56, 56, 24]
+output_size:[1, 56, 56, 144]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 11
+type:1
+input_ddr_addr:[10]
+output_ddr_addr:[12]
+input_size:[1, 56, 56, 144]
+output_size:[1, 28, 28, 144]
+ker_size:[1, 3, 3]
+ker_stride:[1, 2, 2]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:144
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 12
+type:1
+input_ddr_addr:[11]
+output_ddr_addr:[13, 15]
+input_size:[1, 28, 28, 144]
+output_size:[1, 28, 28, 32]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[0, 0]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 13
+type:1
+input_ddr_addr:[12]
+output_ddr_addr:[14]
+input_size:[1, 28, 28, 32]
+output_size:[1, 28, 28, 192]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 14
+type:1
+input_ddr_addr:[13]
+output_ddr_addr:[15]
+input_size:[1, 28, 28, 192]
+output_size:[1, 28, 28, 192]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:192
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 15
+type:1
+input_ddr_addr:[14]
+output_ddr_addr:[16, 18]
+input_size:[1, 28, 28, 192]
+output_size:[1, 28, 28, 32]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[12]
+output_choice:[0, 0]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 16
+type:1
+input_ddr_addr:[15]
+output_ddr_addr:[17]
+input_size:[1, 28, 28, 32]
+output_size:[1, 28, 28, 192]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 17
+type:1
+input_ddr_addr:[16]
+output_ddr_addr:[18]
+input_size:[1, 28, 28, 192]
+output_size:[1, 28, 28, 192]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:192
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 18
+type:1
+input_ddr_addr:[17]
+output_ddr_addr:[19]
+input_size:[1, 28, 28, 192]
+output_size:[1, 28, 28, 32]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[15]
+output_choice:[3, -1]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 19
+type:1
+input_ddr_addr:[18]
+output_ddr_addr:[20]
+input_size:[1, 28, 28, 32]
+output_size:[1, 28, 28, 192]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 20
+type:1
+input_ddr_addr:[19]
+output_ddr_addr:[21]
+input_size:[1, 28, 28, 192]
+output_size:[1, 14, 14, 192]
+ker_size:[1, 3, 3]
+ker_stride:[1, 2, 2]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:192
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 21
+type:1
+input_ddr_addr:[20]
+output_ddr_addr:[22, 24]
+input_size:[1, 14, 14, 192]
+output_size:[1, 14, 14, 64]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[0, 0]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 22
+type:1
+input_ddr_addr:[21]
+output_ddr_addr:[23]
+input_size:[1, 14, 14, 64]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 23
+type:1
+input_ddr_addr:[22]
+output_ddr_addr:[24]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:384
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 24
+type:1
+input_ddr_addr:[23]
+output_ddr_addr:[25, 27]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 64]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[21]
+output_choice:[0, 0]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 25
+type:1
+input_ddr_addr:[24]
+output_ddr_addr:[26]
+input_size:[1, 14, 14, 64]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 26
+type:1
+input_ddr_addr:[25]
+output_ddr_addr:[27]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:384
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 27
+type:1
+input_ddr_addr:[26]
+output_ddr_addr:[28, 30]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 64]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[24]
+output_choice:[0, 0]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 28
+type:1
+input_ddr_addr:[27]
+output_ddr_addr:[29]
+input_size:[1, 14, 14, 64]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 29
+type:1
+input_ddr_addr:[28]
+output_ddr_addr:[30]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:384
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 30
+type:1
+input_ddr_addr:[29]
+output_ddr_addr:[31]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 64]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[27]
+output_choice:[3, -1]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 31
+type:1
+input_ddr_addr:[30]
+output_ddr_addr:[32]
+input_size:[1, 14, 14, 64]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 32
+type:1
+input_ddr_addr:[31]
+output_ddr_addr:[33]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 384]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:384
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 33
+type:1
+input_ddr_addr:[32]
+output_ddr_addr:[34, 36]
+input_size:[1, 14, 14, 384]
+output_size:[1, 14, 14, 96]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[0, 0]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 34
+type:1
+input_ddr_addr:[33]
+output_ddr_addr:[35]
+input_size:[1, 14, 14, 96]
+output_size:[1, 14, 14, 576]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 35
+type:1
+input_ddr_addr:[34]
+output_ddr_addr:[36]
+input_size:[1, 14, 14, 576]
+output_size:[1, 14, 14, 576]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:576
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 36
+type:1
+input_ddr_addr:[35]
+output_ddr_addr:[37, 39]
+input_size:[1, 14, 14, 576]
+output_size:[1, 14, 14, 96]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[33]
+output_choice:[0, 0]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 37
+type:1
+input_ddr_addr:[36]
+output_ddr_addr:[38]
+input_size:[1, 14, 14, 96]
+output_size:[1, 14, 14, 576]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 38
+type:1
+input_ddr_addr:[37]
+output_ddr_addr:[39]
+input_size:[1, 14, 14, 576]
+output_size:[1, 14, 14, 576]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:576
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 39
+type:1
+input_ddr_addr:[38]
+output_ddr_addr:[40]
+input_size:[1, 14, 14, 576]
+output_size:[1, 14, 14, 96]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[36]
+output_choice:[3, -1]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 40
+type:1
+input_ddr_addr:[39]
+output_ddr_addr:[41]
+input_size:[1, 14, 14, 96]
+output_size:[1, 14, 14, 576]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 41
+type:1
+input_ddr_addr:[40]
+output_ddr_addr:[42]
+input_size:[1, 14, 14, 576]
+output_size:[1, 7, 7, 576]
+ker_size:[1, 3, 3]
+ker_stride:[1, 2, 2]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:576
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 42
+type:1
+input_ddr_addr:[41]
+output_ddr_addr:[43, 45]
+input_size:[1, 7, 7, 576]
+output_size:[1, 7, 7, 160]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[0, 0]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 43
+type:1
+input_ddr_addr:[42]
+output_ddr_addr:[44]
+input_size:[1, 7, 7, 160]
+output_size:[1, 7, 7, 960]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 44
+type:1
+input_ddr_addr:[43]
+output_ddr_addr:[45]
+input_size:[1, 7, 7, 960]
+output_size:[1, 7, 7, 960]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:960
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 45
+type:1
+input_ddr_addr:[44]
+output_ddr_addr:[46, 48]
+input_size:[1, 7, 7, 960]
+output_size:[1, 7, 7, 160]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[42]
+output_choice:[0, 0]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 46
+type:1
+input_ddr_addr:[45]
+output_ddr_addr:[47]
+input_size:[1, 7, 7, 160]
+output_size:[1, 7, 7, 960]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 47
+type:1
+input_ddr_addr:[46]
+output_ddr_addr:[48]
+input_size:[1, 7, 7, 960]
+output_size:[1, 7, 7, 960]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:960
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 48
+type:1
+input_ddr_addr:[47]
+output_ddr_addr:[49]
+input_size:[1, 7, 7, 960]
+output_size:[1, 7, 7, 160]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:1
+shortcut_source:[45]
+output_choice:[3, -1]
+res_position:2
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 49
+type:1
+input_ddr_addr:[48]
+output_ddr_addr:[50]
+input_size:[1, 7, 7, 160]
+output_size:[1, 7, 7, 960]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 50
+type:1
+input_ddr_addr:[49]
+output_ddr_addr:[51]
+input_size:[1, 7, 7, 960]
+output_size:[1, 7, 7, 960]
+ker_size:[1, 3, 3]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:1
+pre_padding_size:[0, 1, 1]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:960
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 51
+type:1
+input_ddr_addr:[50]
+output_ddr_addr:[52]
+input_size:[1, 7, 7, 960]
+output_size:[1, 7, 7, 320]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 52
+type:1
+input_ddr_addr:[51]
+output_ddr_addr:[53]
+input_size:[1, 7, 7, 320]
+output_size:[1, 1, 1, 1280]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:1
+pooling_size:[1, 7, 7]
+pooling_stride:[1, 1, 1]
+pooling_type:2
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:1
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
+==========
+id: 53
+type:1
+input_ddr_addr:[52]
+output_ddr_addr:[-1]
+input_size:[1, 1, 1, 1280]
+output_size:[1, 1, 1, 1001]
+ker_size:[1, 1, 1]
+ker_stride:[1, 1, 1]
+pooling:0
+pooling_size:[1, 1, 1]
+pooling_stride:[1, 1, 1]
+pooling_type:0
+pre_padding:0
+pre_padding_size:[0, 0, 0]
+activation_type:0
+residual:0
+shortcut_source:[]
+output_choice:[3, -1]
+res_position:3
+pool_pad:0
+pool_pad_size:[0, 0, 0, 0, 0]
+group:1
+channel_shuffle:1
+upsampling_scale:0
