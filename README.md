@@ -1,5 +1,7 @@
 # Model Quantization
 
+For this example, we are using a pretrained [mobilenet v2](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet) model.
+
 ## Quantize
 
 ### Requirements
@@ -13,7 +15,6 @@ There’s a graphical installer for Windows and Mac that makes installing Docker
     [Linux](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
 ### Build
-Pull Docker image
 ```
 docker pull lmestar/tvm:0.1
 ```
