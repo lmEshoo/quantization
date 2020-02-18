@@ -1,5 +1,6 @@
-# tvm
-Model Quantization
+# Model Quantization
+
+## Quantize
 
 ### Requirements
 - Installing Docker
@@ -11,20 +12,19 @@ There’s a graphical installer for Windows and Mac that makes installing Docker
 
     [Linux](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
-- Clone Project
-
-```
-git clone git@github.com:lmEshoo/Quantization_PJ2.git
-```
-
-## Build
+### Build
 Pull Docker image
 ```
-docker pull lmestar/tvm:0.0.6
+docker pull lmestar/tvm:0.1
 ```
 
-## Implement 
-Start a container with `quantization_utils.py` mounted into the container.
+### Run 
 ```
 make
 ```
+
+## Evaluation
+
+Evaluation was done using [Google Colab](https://colab.research.google.com/). 
+
+- Once you opened the notebook, upload all `./eval/` into the Colab enviroment and run.
