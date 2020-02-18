@@ -1,0 +1,8 @@
+[submodule "incubator-tvm"]
+	path = incubator-tvm
+	url = https://github.com/krosac/incubator-tvm.git
+	branch = master
+[submodule "Quantization_PJ2"]
+	path = Quantization_PJ2
+	url = https://github.com/krosac/Quantization_PJ2.git
+	branch = master
