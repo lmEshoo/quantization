@@ -16,7 +16,7 @@ There’s a graphical installer for Windows and Mac that makes installing Docker
 
 ### Build
 ```
-docker pull lmestar/tvm:0.1
+docker pull lmestar/tvm:0.1.1
 ```
 
 ### Run 
