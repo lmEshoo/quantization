@@ -1,6 +1,6 @@
 USER=lmestar
 CONTAINER_NAME=tvm
-IMAGE=$(USER)/$(CONTAINER_NAME):0.1
+IMAGE=$(USER)/$(CONTAINER_NAME):0.1.1
 
 all: quantize
 
