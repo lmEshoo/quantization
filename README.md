@@ -14,7 +14,18 @@ There’s a graphical installer for Windows and Mac that makes installing Docker
 
     [Linux](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
-### Build
+### Clone 
+
+```bash
+git clone --recursive git@github.com:lmEshoo/quantization.git
+
+cd quantization
+
+git submodule update --init --recursive
+
+```
+
+### Pull
 ```
 docker pull lmestar/tvm:0.1.1
 ```
