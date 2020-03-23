@@ -29,3 +29,9 @@ make
 Evaluation was done using [Google Colab](https://colab.research.google.com/). 
 
 - Once you opened the notebook, upload all `./eval/` into the Colab enviroment and run.
+
+
+## Contributors
+
+- Lini Mestar
+- Harpreet Wassan
